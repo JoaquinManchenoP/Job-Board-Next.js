@@ -6,8 +6,7 @@ import LocationTag from '../../components/JobCard/LocationTag'
 import { motion } from 'framer-motion';
 
 export default function JobCard({ data }) {
-
-    console.log(data);
+    console.log(data)
     return (
         <motion.div
             whileHover={{ scale: 1.01 }}
@@ -17,27 +16,28 @@ export default function JobCard({ data }) {
                 <div className="left__side h-full w-full">
                     <div className="job__title h-2/6 w-full flex items-center">
                         <div className="job__title ml-3">
-                            <span className="text-xl">Devops Engineer</span>
+                            <span className="text-xl">{data.position}</span>
                         </div>
                     </div>
                     <div className="h-4/6 w-full">
                         <div className="job__type h-9 w-ful flex space-x-1 ">
                             <div className="type h-9 w-32 flex items-center justify-center pl-2">
-                                <JobType />
+                                <JobType jobType={data.jobType} />
                             </div>
                             <div className="skills flex items-center space-x-2 pl-2">
-                                <SkillTag tag={'React'} />
-                                <SkillTag tag={'Svelte'} />
-                                <SkillTag tag={'React'} />
+                                {data.skills.map((skill, idx) => (
+                                    <SkillTag tag={skill} key={idx} />
+                                ))}
+
                             </div>
                         </div>
 
                         <div className="salary__location h-4/6 w-full flex items-center space-x-3 pl-2">
                             <div className="salary">
-                                <SalaryTag salary={'100,000 - 200,000'} />
+                                <SalaryTag salary={data.salaryRange} />
                             </div>
                             <civ className="location">
-                                <LocationTag location={'Quito, Ecuador'} />
+                                <LocationTag location={data.jobLocation} />
                             </civ>
                         </div>
                     </div>

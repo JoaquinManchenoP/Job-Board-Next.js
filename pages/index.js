@@ -8,8 +8,8 @@ export default function Home() {
       'id': 1,
       'position': 'Software Engineer',
       'jobType': 'Development',
-      'salary-range': '100,000 - 200,000',
-      'location': 'Remote',
+      'salaryRange': '100,000 - 200,000',
+      'jobLocation': 'Remote',
       'skills': [
         'react', 'svelte', 'php'
       ],
@@ -18,9 +18,20 @@ export default function Home() {
     {
       'id': 2,
       'position': 'Devops Engineer',
-      'jobType': 'Development',
-      'salary-range': '150,000 - 200,000',
-      'location': 'Quito, Ecuador',
+      'jobType': 'Engineering',
+      'salaryRange': '150,000 - 200,000',
+      'jobLocation': 'Quito, Ecuador',
+      'skills': [
+        'Ruby', 'Remix', 'Vue'
+      ],
+      'employerName': 'google.com'
+    },
+    {
+      'id': 3,
+      'position': 'Team Manager',
+      'jobType': 'Management',
+      'salaryRange': '150,000 - 200,000',
+      'jobLocation': 'New York, USA',
       'skills': [
         'RabitMq', 'Remix', 'Vue'
       ],
