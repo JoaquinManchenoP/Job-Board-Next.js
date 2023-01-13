@@ -2,11 +2,10 @@ import React from 'react'
 import JobType from './JobType';
 import SkillTag from './SkillTag';
 import SalaryTag from './SalaryTag';
-import LocationTag from '../../components/JobCard/LocationTag'
+import LocationTag from './LocationTag'
 import { motion } from 'framer-motion';
 
 export default function JobCard({ data }) {
-    console.log(data)
     return (
         <motion.div
             whileHover={{ scale: 1.01 }}

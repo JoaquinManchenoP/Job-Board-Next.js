@@ -1,5 +1,5 @@
 import React, { Children } from 'react'
-import LevelMenu from '../../../components/LevelMenu/LevelMenu'
+import LevelMenu from '../../../components/levelMenu/LevelMenu'
 
 export default function Layout({ children }) {
     return (

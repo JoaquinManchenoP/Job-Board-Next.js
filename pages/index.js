@@ -1,5 +1,6 @@
-import JobCard from "../components/JobCard/JobCard"
-import Layout from "./Layout/Layout.js/Layout"
+import JobCard from "../components/jobCard/JobCard"
+import Layout from "./Layout/mainLayout/Layout"
+import Link from "next/link"
 
 export default function Home() {
 
@@ -36,15 +37,30 @@ export default function Home() {
         'RabitMq', 'Remix', 'Vue'
       ],
       'employerName': 'google.com'
+    },
+    {
+      'id': 3,
+      'position': 'UI/UX Designer',
+      'jobType': 'Management',
+      'salaryRange': '150,000 - 200,000',
+      'jobLocation': 'Paris, France',
+      'skills': [
+        'RabitMq', 'Angular', 'Vue'
+      ],
+      'employerName': 'facebook.com'
     }
   ]
 
 
   return (
     <Layout>
-      <div className="index space-y-2 ">
+      <div className="inde space-y-3 ">
         {mockData.map(job => (
-          <JobCard data={job} key={job.id} />
+          <div className="card bg-orange-500" key={job.id}>
+            <Link href={'/listings/' + job.id}>
+              <JobCard data={job} />
+            </Link>
+          </div>
         ))}
       </div>
     </Layout >
