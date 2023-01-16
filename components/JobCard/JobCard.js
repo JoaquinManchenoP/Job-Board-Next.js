@@ -19,7 +19,7 @@ export default function JobCard({ data }) {
                         </div>
                     </div>
                     <div className="h-4/6 w-full">
-                        <div className="job__type h-9 w-ful flex space-x-1 ">
+                        <div className="job__type h-9 w-ful flex space-x-1">
                             <div className="type h-9 w-32 flex items-center justify-center pl-2">
                                 <JobType jobType={data.jobType} />
                             </div>
@@ -30,7 +30,6 @@ export default function JobCard({ data }) {
 
                             </div>
                         </div>
-
                         <div className="salary__location h-4/6 w-full flex items-center space-x-3 pl-2">
                             <div className="salary">
                                 <SalaryTag salary={data.salaryRange} />
