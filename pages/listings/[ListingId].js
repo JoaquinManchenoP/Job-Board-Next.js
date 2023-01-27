@@ -2,6 +2,8 @@ import React from 'react'
 import ListingDetails from '../../components/listingDetails/ListingDetails'
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { useRouter } from 'next/router';
+import ApplyButton from '../../components/ListingComponents/ApplyButton/ApplyButton';
+import ListingContent from '../../components/ListingComponents/ApplyButton/ListingContent/ListingContent';
 
 
 export default function Listing() {
@@ -15,14 +17,17 @@ export default function Listing() {
                             <AiOutlineArrowLeft className='text-3xl' />
                         </button>
                     </div>
-                    <div className='listing__details h-[500px] w-10/12'>
+                    <div className='listing__details h-[500px] w-full flex justify-center'>
                         <ListingDetails />
                     </div>
+                    <div className="apply__button pt-7">
+                        <ApplyButton />
+                    </div>
                 </div>
-                <div className="left h-full w-3/4 bg-orange-500">
-                    left_side
+                <div className="left sm:w-full md:w-3/4 h-full bg-orange-500 flex items-center justify-center">
+                    <ListingContent />
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

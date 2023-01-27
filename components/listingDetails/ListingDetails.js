@@ -3,7 +3,8 @@ import { MdWork } from 'react-icons/md';
 import { BiTime } from 'react-icons/bi';
 import { BsFillFilePersonFill } from 'react-icons/bs';
 import { BsCash } from 'react-icons/bs';
-import SkillTag from '../jobCard/SkillTag';
+import { CgWebsite } from 'react-icons/cg';
+
 
 
 export default function ListingDetails() {
@@ -33,13 +34,9 @@ export default function ListingDetails() {
                     6 Aplicants
                 </div>
             </div>
-            <div className="selected__skills space-y-3">
-                <div>
-                    <SkillTag tag={"react"} />
-                </div>
-                <div>
-                    <SkillTag tag={"svelte"} />
-                </div>
+            <div className="companu__website h-8 w-full bg-red-400 flex items-center space-x-3">
+                <CgWebsite className='text-2xl' />
+                <span>Company website</span>
             </div>
             <div className="salary h-8 w-full bg-red-400 flex items-center space-x-3">
                 <div className="salary__icon">
