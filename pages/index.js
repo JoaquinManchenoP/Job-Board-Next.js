@@ -56,7 +56,7 @@ export default function Home() {
     <Layout>
       <div className="inde space-y-3 ">
         {mockData.map(job => (
-          <div className="card bg-orange-500" key={job.id}>
+          <div className="card" key={job.id}>
             <Link href={'/listings/' + job.id}>
               <JobCard data={job} />
             </Link>

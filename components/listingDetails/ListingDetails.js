@@ -3,10 +3,13 @@ import { MdWork } from 'react-icons/md';
 import { BiTime } from 'react-icons/bi';
 import { BsFillFilePersonFill } from 'react-icons/bs';
 import { BsCash } from 'react-icons/bs';
+import { CgWebsite } from 'react-icons/cg';
+
+
 
 export default function ListingDetails() {
     return (
-        <div className="details h-[500px] w-10/12 bg-orange-500 space-y-4">
+        <div className="details h-full w-full bg-orange-500 space-y-4">
             <div className="employer h-8 w-full bg-red-400 flex items-center space-x-3">
                 <div className="employer__icon">
                     <MdWork className='text-2xl' />
@@ -31,13 +34,9 @@ export default function ListingDetails() {
                     6 Aplicants
                 </div>
             </div>
-            <div className="selected__skills">
-                <div>
-                    react
-                </div>
-                <div>
-                    svelte
-                </div>
+            <div className="companu__website h-8 w-full bg-red-400 flex items-center space-x-3">
+                <CgWebsite className='text-2xl' />
+                <span>Company website</span>
             </div>
             <div className="salary h-8 w-full bg-red-400 flex items-center space-x-3">
                 <div className="salary__icon">
