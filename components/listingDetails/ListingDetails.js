@@ -9,8 +9,8 @@ import { CgWebsite } from 'react-icons/cg';
 
 export default function ListingDetails() {
     return (
-        <div className="details h-full w-full bg-orange-500 space-y-4">
-            <div className="employer h-8 w-full bg-red-400 flex items-center space-x-3">
+        <div className="details h-full w-full space-y-4">
+            <div className="employer h-8 w-full flex items-center space-x-3">
                 <div className="employer__icon">
                     <MdWork className='text-2xl' />
                 </div>
@@ -18,7 +18,7 @@ export default function ListingDetails() {
                     Employer name
                 </dic>
             </div>
-            <div className="time h-8 w-full bg-red-400 flex items-center space-x-3">
+            <div className="time h-8 w-full flex items-center space-x-3">
                 <div className="time__icon">
                     <BiTime className='text-2xl' />
                 </div>
@@ -26,7 +26,7 @@ export default function ListingDetails() {
                     Full time
                 </div>
             </div>
-            <div className="aplicants h-8 w-full bg-red-400 flex items-center space-x-3">
+            <div className="aplicants h-8 w-full flex items-center space-x-3">
                 <div className="aplicants__icon">
                     <BsFillFilePersonFill className='text-2xl' />
                 </div>
@@ -34,11 +34,11 @@ export default function ListingDetails() {
                     6 Aplicants
                 </div>
             </div>
-            <div className="companu__website h-8 w-full bg-red-400 flex items-center space-x-3">
+            <div className="companu__website h-8 w-full flex items-center space-x-3">
                 <CgWebsite className='text-2xl' />
                 <span>Company website</span>
             </div>
-            <div className="salary h-8 w-full bg-red-400 flex items-center space-x-3">
+            <div className="salary h-8 w-full  flex items-center space-x-3">
                 <div className="salary__icon">
                     <BsCash className='text-2xl' />
                 </div>
