@@ -11,16 +11,16 @@ export default function Listing() {
     return (
         <div className="listing h-screen w-screen flex justify-center">
             <div className="listing__container h-full w-11/12 md:flex xl:flex">
-                <div className="right h-full md:-full lg:w-1/4 xl:w-1/4 bg-green-400 flex flex-col items-center space-y-4 ">
-                    <div className="back__button pt-5">
+                <div className="right sm:h-full md:h-full md:w-1/4 lg:w-1/4 xl:w-1/4 bg-green-400 flex flex-col items-center space-y-4 ">
+                    <div className="back__button pt-6">
                         <button onClick={() => router.back()}>
                             <AiOutlineArrowLeft className='text-3xl' />
                         </button>
                     </div>
-                    <div className='listing__details h-[500px] w-full flex justify-center'>
+                    <div className='listing__details h-[500px] w-full flex justify-center pt-16'>
                         <ListingDetails />
                     </div>
-                    <div className="apply__button pt-7">
+                    <div className="apply__button">
                         <ApplyButton />
                     </div>
                 </div>

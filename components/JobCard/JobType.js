@@ -5,7 +5,7 @@ export default function JobType({ jobType }) {
         <div
             className="job__type text-sm h-full w-full bg-blue-400 flex items-center justify-center rounded-md"
         >
-            {jobType}
+            <span className='text-white'>{jobType}</span>
         </div>
 
     )

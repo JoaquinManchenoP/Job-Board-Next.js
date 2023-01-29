@@ -6,7 +6,7 @@ export default function ApplyButton() {
         <motion.div
             whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.99 }}
-            className="apply__button h-16 w-44 bg-red-500 flex items-center justify-center rounded-md shadow-lg ">
+            className="apply__button h-16 w-44 bg-red-500 flex items-center justify-center rounded-md shadow-lg mb-44 ">
             <span>Apply Now</span>
         </motion.div>
     )
