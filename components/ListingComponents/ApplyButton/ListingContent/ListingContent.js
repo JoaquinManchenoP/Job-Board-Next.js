@@ -18,7 +18,6 @@ export default function ListingContent() {
                 <div className="description h-full w-full space-y-8 pt-5">
                     <span className='text-xl font-bold'>Job Description</span>
                     <div className="decription__content h-5/6 w-11/12 bg-gray-200">
-                        this is th descriptions of this job
                     </div>
                 </div>
             </div>
