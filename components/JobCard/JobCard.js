@@ -27,7 +27,6 @@ export default function JobCard({ data }) {
                                 {data.skills.map((skill, idx) => (
                                     <SkillTag tag={skill} key={idx} />
                                 ))}
-
                             </div>
                         </div>
                         <div className="salary__location h-4/6 w-full flex items-center space-x-3 pl-2">
