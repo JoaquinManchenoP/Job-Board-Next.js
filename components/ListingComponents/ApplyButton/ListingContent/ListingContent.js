@@ -1,18 +1,22 @@
 import React from 'react'
 
-export default function ListingContent() {
+export default function ListingContent({ content }) {
+    console.log(content);
     return (
         <div className="listing___content h-screen w-11/12">
             <div className="container h-full w-full">
                 <div className="job__title h-56 w-full  flex flex-col justify-center space-y-5 ">
                     <div className="title h-24 w-full flex items-center">
-                        <span className='text-3xl overflow-hidden'>This is the complete job position for this job</span>
+                        <span className='text-4xl overflow-hidden'>{content.position}</span>
                     </div>
                     <div className="company pt-3">
-                        <span className='text-lg font-bold'>This is the name of the company</span>
+                        <span className='text-lg font-bold'>
+                            {content.employerName}
+                        </span>
                     </div>
-                    <div className="experience">
-                        Level: Senior
+                    <div className="experience space-x-1">
+                        <span>Level:</span>
+                        <span>{content.jobLevel}</span>
                     </div>
                 </div>
                 <div className="description h-full w-full space-y-8 pt-5">
