@@ -7,6 +7,20 @@ import ListingContent from '../../components/ListingComponents/ApplyButton/Listi
 
 
 export default function Listing() {
+    const mockData = {
+        'id': 1,
+        'position': 'Software Engineer',
+        'jobType': 'Development',
+        'salaryRange': '200,000 - 300,000',
+        'jobLocation': 'Remote',
+        'employerEmail': 'metrosolution@hotmail.com',
+        'employerName': 'Metrosolutions storage',
+        'jobTime': 'Part Time',
+        'companyWebsite': 'wwww.metrosolution.com',
+        'jobLevel': 'Junior'
+    }
+
+
     const router = useRouter();
     return (
         <div className="listing h-screen w-screen flex justify-center">
@@ -22,7 +36,7 @@ export default function Listing() {
                     </div>
                     <div className='listing__details h-[500px] w-full flex flex-col pt-16 '>
                         <div className="listing__details">
-                            <ListingDetails />
+                            <ListingDetails details={mockData} />
                         </div>
                     </div>
                     <div className="apply__button h-[300px] w-full  flex items-center">
@@ -30,7 +44,7 @@ export default function Listing() {
                     </div>
                 </div>
                 <div className="left sm:w-full md:w-3/4 h-full bg-purple-500 flex items-center justify-center">
-                    <ListingContent />
+                    <ListingContent content={mockData} />
                 </div>
             </div>
         </div >
