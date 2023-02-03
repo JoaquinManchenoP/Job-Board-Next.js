@@ -15,7 +15,7 @@ export default function JobCard({ data }) {
                 <div className="left__side h-full w-full">
                     <div className="job__title h-2/6 w-full flex items-center">
                         <div className="job__title ml-3">
-                            <span className="text-xl">{data.position}</span>
+                            <span className="text-xl font-robto font-semibold">{data.position}</span>
                         </div>
                     </div>
                     <div className="h-4/6 w-full">

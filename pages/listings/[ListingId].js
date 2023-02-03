@@ -28,9 +28,9 @@ export default function Listing() {
                 <div className="right xs:h-[719px] sm:h-full md:h-full md:w-1/4 lg:w-1/4 xl:w-1/4 flex flex-col items-center space-y-4 ">
                     <div className="back__button h-32 w-full flex items-center mt-2 border-b-2">
                         <button className="flex space-x-2" onClick={() => router.back()}>
-                            <AiOutlineArrowLeft className='text-2xl text-blue-400' />
+                            <AiOutlineArrowLeft className='text-2xl text-blue-500' />
                             <div className="button__text">
-                                <span className='text-blue-400 font-bold'>Back to Jobs</span>
+                                <span className='text-blue-500 font-bold font-roboto'>Back to Jobs</span>
                             </div>
                         </button>
                     </div>

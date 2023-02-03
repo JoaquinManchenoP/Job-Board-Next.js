@@ -9,7 +9,7 @@ import { CgFontSpacing, CgWebsite } from 'react-icons/cg';
 
 export default function ListingDetails({ details }) {
     return (
-        <div className="details h-full w-full space-y-4">
+        <div className="details h-full w-full space-y-4 font-roboto">
             <div className="employer h-8 w-full flex items-center space-x-3 min-w-max">
                 <div className="employer__icon">
                     <MdWork className='text-2xl' />
