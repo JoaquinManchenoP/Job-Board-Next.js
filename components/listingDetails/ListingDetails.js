@@ -3,13 +3,13 @@ import { MdWork } from 'react-icons/md';
 import { BiTime } from 'react-icons/bi';
 import { BsFillFilePersonFill } from 'react-icons/bs';
 import { BsCash } from 'react-icons/bs';
-import { CgFontSpacing, CgWebsite } from 'react-icons/cg';
+import { CgWebsite } from 'react-icons/cg';
 
 
 
 export default function ListingDetails({ details }) {
     return (
-        <div className="details h-full w-full space-y-4">
+        <div className="details h-full w-full space-y-4 font-roboto">
             <div className="employer h-8 w-full flex items-center space-x-3 min-w-max">
                 <div className="employer__icon">
                     <MdWork className='text-2xl' />
