@@ -3,7 +3,7 @@ import { MdWork } from 'react-icons/md';
 import { BiTime } from 'react-icons/bi';
 import { BsFillFilePersonFill } from 'react-icons/bs';
 import { BsCash } from 'react-icons/bs';
-import { CgWebsite } from 'react-icons/cg';
+import { CgFontSpacing, CgWebsite } from 'react-icons/cg';
 
 
 
