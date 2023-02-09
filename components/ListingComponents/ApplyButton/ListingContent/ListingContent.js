@@ -5,7 +5,7 @@ export default function ListingContent({ content }) {
     return (
         <div className="listing___content h-screen w-11/12">
             <div className="container h-full w-full">
-                <div className="job__title h-56 w-full  flex flex-col justify-center space-y-3 ">
+                <div className="job__title h-56 w-full  flex flex-col justify-center space-y-3 bg-red-500">
                     <div className="title h-24 w-full flex items-center">
                         <span className='text-4xl overflow-hidden font-roboto font-bold'>Nepe</span>
                     </div>
