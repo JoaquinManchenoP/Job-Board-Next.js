@@ -26,7 +26,7 @@ export default function Listing() {
     return (
         <div className="listing h-screen w-screen flex justify-center">
             <div className="listing__container h-full w-11/12 md:flex xl:flex">
-                <div className="left xs:h-[719px] sm:h-full md:h-full md:w-1/4 lg:w-1/4 xl:w-1/4 flex flex-col items-center space-y-4 ">
+                <div className="left xs:h-[719px] sm:h-full md:h-full md:w-1/4 lg:w-1/4 xl:w-1/4 flex flex-col items-center space-y-4 bg-yellow-600">
                     <div className="back__button h-32 w-full flex items-center mt-2 border-b-2">
                         <button className="flex space-x-2" onClick={() => router.back()}>
                             <AiOutlineArrowLeft className='text-2xl text-blue-500' />
@@ -44,8 +44,9 @@ export default function Listing() {
                         <ApplyButton />
                     </div>
                 </div>
-                <div className="right sm:w-full md:w-3/4 h-full flex items-center justify-center">
+                <div className="right sm:w-full md:w-3/4 h-full flex items-center justify-center bg-purple-200">
                     <ListingContent content={mockData} />
+
                 </div>
             </div>
         </div>
